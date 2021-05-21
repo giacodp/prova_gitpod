@@ -1,0 +1,13 @@
+tasks:
+  - before: |
+      export REPO=prova
+      export FLASK_ENV=development
+    init: |
+      pip install -r $REPO/requirements.txt
+    command: |
+      python prova.py
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-toolsai.jupyter
+    - SonarSource.sonarlint-vscode
