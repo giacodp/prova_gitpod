@@ -1,3 +1,4 @@
+image: silverlogic/python3.6:latest
 tasks:
   - before: |
       export REPO=prova_gitpod
