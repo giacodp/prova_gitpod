@@ -3,9 +3,10 @@ image: silverlogic/python3.6:latest
 #  file: .gitpod.Dockerfile
 tasks:
   - before: |
+      apt install nano
       export REPO=prova_gitpod
     init: |
-      pip install -U pip && pip install -r requirements.txt
+      python -m pip install -U python -m pip && pip install -r requirements.txt
     command: |
       python prova.py
 vscode:
