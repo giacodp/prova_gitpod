@@ -1,9 +1,8 @@
 tasks:
   - before: |
-      export REPO=prova
-      export FLASK_ENV=development
+      export REPO=prova_gitpod
     init: |
-      pip install -r $REPO/requirements.txt
+      pip install -U pip && pip install -r $REPO/requirements.txt
     command: |
       python prova.py
 vscode:
@@ -11,3 +10,4 @@ vscode:
     - ms-python.python
     - ms-toolsai.jupyter
     - SonarSource.sonarlint-vscode
+    - svipas.prettier-plus
