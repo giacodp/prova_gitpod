@@ -1,6 +1,6 @@
-#image: silverlogic/python3.6:latest
-image:
-  file: .gitpod.Dockerfile
+image: centos/python-36-centos7:latest
+#image:
+  #file: .gitpod.Dockerfile
 tasks:
   - before: |
       export REPO=prova_gitpod
