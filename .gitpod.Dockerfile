@@ -1,2 +1,2 @@
 FROM centos/python-36-centos7:latest
-RUN yum install -y nano
+RUN sudo yum install -y nano
