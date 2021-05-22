@@ -1,2 +1,2 @@
-FROM centos/python-36-centos7:latest
-#RUN sudo yum install -y nano
+FROM silverlogic/python3.6:latest
+RUN apt install -y nano
