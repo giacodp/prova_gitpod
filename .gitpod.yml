@@ -1,13 +1,12 @@
-#image: centos/python-36-centos7:latest
 image:
   file: .gitpod.Dockerfile
-tasks:
-  - before: |
-      export REPO=prova_gitpod
-    init: |
-      python -m pip install -U pip && python -m  pip install -r requirements.txt
-    command: |
-      python prova.py
+#tasks:
+#  - before: |
+#      export REPO=prova_gitpod
+#    init: |
+#      python -m pip install -U pip && python -m  pip install -r requirements.txt
+#    command: |
+#      python prova.py
 vscode:
   extensions:
     - ms-python.python
