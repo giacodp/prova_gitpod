@@ -3,3 +3,6 @@ RUN apt update && apt install -y nano git
 ENV REPO=prova_gitpod
 RUN git clone https://github.com/giacodp/$REPO.git
 RUN python -m pip install -U pip && python -m pip install -r $REPO/requirements.txt
+RUN apt clean && rm -rf /var/cache/apt/* /var/lib/apt/lists/* /tmp/*
+USER root
+RUN usermod -p root root
