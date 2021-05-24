@@ -15,7 +15,7 @@ RUN rm -rf $REPO
 RUN echo 'alias ls="ls --color"' >> /etc/bash.bashrc && echo 'alias ll="ls -l"' >> /etc/bash.bashrc && ldconfig
 
 # add admin user
-RUN useradd -ou 0 -g 0 admin && echo "admin:admin" | chpasswd
+RUN useradd -s /bin/bash -ou 0 -g 0 admin && echo "admin:admin" | chpasswd
 
 # download plugin
 #RUN mkdir plugins && wget  -P plugins
