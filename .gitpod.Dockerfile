@@ -15,4 +15,4 @@ RUN rm -rf $REPO
 RUN echo 'alias ls="ls --color"' >> /etc/bash.bashrc && echo 'alias ll="ls -l"' >> /etc/bash.bashrc && ldconfig
 
 # add admin user
-RUN useradd -m -G root admin && usermod -p admin admin
+RUN useradd -m -G root admin
