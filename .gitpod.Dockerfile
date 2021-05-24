@@ -13,3 +13,6 @@ RUN rm -rf $REPO
 
 # useful alias
 RUN echo 'alias ls="ls --color"' >> /etc/bash.bashrc && echo 'alias ll="ls -l"' >> /etc/bash.bashrc && ldconfig
+
+# add gitpod user to root
+RUN usermod -G root gitpod
