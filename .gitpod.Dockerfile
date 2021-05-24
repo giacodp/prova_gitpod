@@ -16,3 +16,6 @@ RUN echo 'alias ls="ls --color"' >> /etc/bash.bashrc && echo 'alias ll="ls -l"' 
 
 # add admin user
 RUN useradd -m -G root admin && echo "admin:admin" | chpasswd
+
+# set root password
+RUN echi "root:root" | chpasswd
