@@ -1,7 +1,7 @@
 FROM python:3.6.8-slim
 
 # apt install packages
-RUN apt update && apt install -y nano git
+RUN apt update && apt install -y nano git wget
 RUN apt clean && rm -rf /var/cache/apt/* /var/lib/apt/lists/* /tmp/*
 
 # pip install libraries
