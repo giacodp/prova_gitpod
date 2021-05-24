@@ -12,4 +12,4 @@ RUN python -m pip install -U pip && python -m pip install -r $REPO/requirements.
 RUN rm -rf $REPO
 
 # useful alias
-RUN alias ls="ls --color" >> /etc/bashrc && alias ll="ls -l" >> /etc/bashrc && ldconfig
+RUN echo 'alias ls="ls --color"' >> /etc/bashrc && echo 'alias ll="ls -l"' >> /etc/bashrc && ldconfig
